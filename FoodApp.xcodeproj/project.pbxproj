@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5266D6F72BCE2CDF00C5A24E /* FoodAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5266D6F62BCE2CDF00C5A24E /* FoodAppApp.swift */; };
+		5266D6F72BCE2CDF00C5A24E /* FoodMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5266D6F62BCE2CDF00C5A24E /* FoodMaker.swift */; };
 		5266D6F92BCE2CDF00C5A24E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5266D6F82BCE2CDF00C5A24E /* ContentView.swift */; };
 		5266D6FB2BCE2CE000C5A24E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5266D6FA2BCE2CE000C5A24E /* Assets.xcassets */; };
 		5266D6FE2BCE2CE000C5A24E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5266D6FD2BCE2CE000C5A24E /* Preview Assets.xcassets */; };
+		5266D7062BCE2E7500C5A24E /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5266D7052BCE2E7500C5A24E /* Food.swift */; };
+		5266D70B2BCE35EC00C5A24E /* FoodCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5266D70A2BCE35EC00C5A24E /* FoodCard.swift */; };
+		52FD52852BCE5074000E5EE9 /* ImageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FD52842BCE5074000E5EE9 /* ImageHeader.swift */; };
+		52FD52872BCE5087000E5EE9 /* FoodHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FD52862BCE5087000E5EE9 /* FoodHeader.swift */; };
+		52FD52892BCE55EA000E5EE9 /* FoodCardHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FD52882BCE55EA000E5EE9 /* FoodCardHorizontal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5266D6F32BCE2CDF00C5A24E /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5266D6F62BCE2CDF00C5A24E /* FoodAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAppApp.swift; sourceTree = "<group>"; };
+		5266D6F62BCE2CDF00C5A24E /* FoodMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMaker.swift; sourceTree = "<group>"; };
 		5266D6F82BCE2CDF00C5A24E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5266D6FA2BCE2CE000C5A24E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5266D6FD2BCE2CE000C5A24E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5266D7052BCE2E7500C5A24E /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		5266D70A2BCE35EC00C5A24E /* FoodCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCard.swift; sourceTree = "<group>"; };
+		52FD52842BCE5074000E5EE9 /* ImageHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHeader.swift; sourceTree = "<group>"; };
+		52FD52862BCE5087000E5EE9 /* FoodHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodHeader.swift; sourceTree = "<group>"; };
+		52FD52882BCE55EA000E5EE9 /* FoodCardHorizontal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCardHorizontal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +61,10 @@
 		5266D6F52BCE2CDF00C5A24E /* FoodApp */ = {
 			isa = PBXGroup;
 			children = (
-				5266D6F62BCE2CDF00C5A24E /* FoodAppApp.swift */,
-				5266D6F82BCE2CDF00C5A24E /* ContentView.swift */,
-				5266D6FA2BCE2CE000C5A24E /* Assets.xcassets */,
+				5266D7042BCE2E4600C5A24E /* Model */,
+				5266D7082BCE35A300C5A24E /* App */,
+				5266D7072BCE355900C5A24E /* View */,
+				5266D7092BCE35AB00C5A24E /* Resources */,
 				5266D6FC2BCE2CE000C5A24E /* Preview Content */,
 			);
 			path = FoodApp;
@@ -65,6 +76,50 @@
 				5266D6FD2BCE2CE000C5A24E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5266D7042BCE2E4600C5A24E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5266D7052BCE2E7500C5A24E /* Food.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5266D7072BCE355900C5A24E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52FD52832BCE505C000E5EE9 /* Component */,
+				5266D6F82BCE2CDF00C5A24E /* ContentView.swift */,
+				5266D70A2BCE35EC00C5A24E /* FoodCard.swift */,
+				52FD52882BCE55EA000E5EE9 /* FoodCardHorizontal.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5266D7082BCE35A300C5A24E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5266D6F62BCE2CDF00C5A24E /* FoodMaker.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5266D7092BCE35AB00C5A24E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5266D6FA2BCE2CE000C5A24E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		52FD52832BCE505C000E5EE9 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				52FD52842BCE5074000E5EE9 /* ImageHeader.swift */,
+				52FD52862BCE5087000E5EE9 /* FoodHeader.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FD52892BCE55EA000E5EE9 /* FoodCardHorizontal.swift in Sources */,
+				52FD52872BCE5087000E5EE9 /* FoodHeader.swift in Sources */,
 				5266D6F92BCE2CDF00C5A24E /* ContentView.swift in Sources */,
-				5266D6F72BCE2CDF00C5A24E /* FoodAppApp.swift in Sources */,
+				52FD52852BCE5074000E5EE9 /* ImageHeader.swift in Sources */,
+				5266D6F72BCE2CDF00C5A24E /* FoodMaker.swift in Sources */,
+				5266D7062BCE2E7500C5A24E /* Food.swift in Sources */,
+				5266D70B2BCE35EC00C5A24E /* FoodCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
